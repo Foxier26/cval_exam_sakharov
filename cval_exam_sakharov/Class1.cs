@@ -2,6 +2,7 @@
 {
     public class College
     {
+        //Сахаров Андрей 22ИС
         public string NameColl { get; set; }
         public string Address { get; set; }
         public List<Teachers> teachers = new List<Teachers>();
@@ -14,6 +15,7 @@
 
         public void ShowAll()
         {
+            //Сахаров Андрей 22ИС
             Console.WriteLine($"Колледж:{NameColl}\n" + $"Адрес: {Address}\nПреподаватели:");
             teachers.Sort();
             foreach (Teachers teachers in teachers)
@@ -25,6 +27,7 @@
 
     public class Teachers: IComparable<Teachers>
     {
+        //Сахаров Андрей 22ИС
         public string Name { get; set; }
         public string Course { get; set; }
         public Teachers(string nm, string cur)
@@ -34,6 +37,7 @@
         }
         public void Show()
         {
+            //Сахаров Андрей 22ИС
             Console.WriteLine($"\tФИО: {Name}\n" + $"\tДисциплина: {Course}");
         }
 
