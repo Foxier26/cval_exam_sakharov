@@ -14,7 +14,7 @@
 
         public void ShowAll()
         {
-            Console.WriteLine($"Колледж:{NameColl}\n" + $"Адрес: {Address}");
+            Console.WriteLine($"Колледж:{NameColl}\n" + $"Адрес: {Address}\nПреподаватели:");
             teachers.Sort();
             foreach (Teachers teachers in teachers)
             {
@@ -34,7 +34,7 @@
         }
         public void Show()
         {
-            Console.WriteLine("Преподаватели:\n" + $"\tПреподаватель: {Name}\n" + $"\tДисциплина: {Course}");
+            Console.WriteLine($"\tФИО: {Name}\n" + $"\tДисциплина: {Course}");
         }
 
         public int CompareTo(Teachers? other)
