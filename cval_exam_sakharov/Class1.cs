@@ -23,7 +23,7 @@
         }
     }
 
-    public class Teachers
+    public class Teachers: IComparable<Teachers>
     {
         public string Name { get; set; }
         public string Course { get; set; }
@@ -35,6 +35,11 @@
         public void Show()
         {
             Console.WriteLine("Преподаватели:\n" + $"\tПреподаватель: {Name}\n" + $"\tДисциплина: {Course}");
+        }
+
+        public int CompareTo(Teachers? other)
+        {
+            return Name.CompareTo(other.Name);
         }
     }
 }
