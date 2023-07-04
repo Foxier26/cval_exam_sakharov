@@ -16,7 +16,7 @@
         {
             Console.WriteLine($"Колледж:{NameColl}\n" + $"Адрес: {Address}");
             teachers.Sort();
-            foreach (Teachers teachers in )
+            foreach (Teachers teachers in teachers)
             {
                 teachers.Show();
             }
